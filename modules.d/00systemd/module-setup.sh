@@ -45,6 +45,7 @@ install() {
         $systemdutildir/systemd-vconsole-setup \
         $systemdutildir/system-generators/systemd-fstab-generator \
         $systemdutildir/system-generators/systemd-gpt-auto-generator \
+        $systemdutildir/system-generators/systemd-debug-generator \
         \
         $systemdsystemunitdir/cryptsetup.target \
         $systemdsystemunitdir/emergency.target \
@@ -102,6 +103,7 @@ install() {
         $systemdsystemunitdir/systemd-random-seed-load.service \
         $systemdsystemunitdir/systemd-random-seed.service \
         $systemdsystemunitdir/systemd-sysctl.service \
+        $systemdsystemunitdir/debug-shell.service \
         \
         $systemdsystemunitdir/sysinit.target.wants/systemd-modules-load.service \
         $systemdsystemunitdir/sysinit.target.wants/systemd-ask-password-console.path \
